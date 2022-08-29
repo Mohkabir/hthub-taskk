@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+:root {
+  --black: #3d3d3d;
+  --white: #ffffff;
+  --primary: #0a2640;
+  --secondary: #65e4a3;
+  --hoveredSecondary: #17864d;
+  --grey: #777777;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: manrope;
+  src: url("./assets/fonts/manrope-v13-latin/manrope-v13-latin-500.ttf");
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+  font-family: manrope;
+  src: url("./assets/fonts/manrope-v13-latin/manrope-v13-latin-700.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: manrope;
+  src: url("./assets/fonts/manrope-v13-latin/manrope-v13-latin-regular.ttf");
+  font-weight: 400;
+}
+
+* {
+  font-family: manrope;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: manrope;
+  font-weight: 500;
+}
+h1 {
+  font-size: 48px;
+  line-height: 72px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 24px;
+}
+p {
+  font-size: 20px;
+}
+small {
+  font-size: 16px;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  p {
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
   }
 }
